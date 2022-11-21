@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nb1;
+    do {
+        nb1 = +prompt("nhập vào số nguyên thứ nhất: ");
+    }while (nb1%1!=0);
+    let nb2;
+    do {
+        nb2 = +prompt("nhập vào số nguyên thứ hai: ");
+    }while (nb2%1!=0);
+
+    let nb3;
+    do {
+        nb3 = +prompt("nhập vào số nguyên thứ ba: ");
+    }while (nb3%1!=0);
+
+    function checkMin(nb1,nb2,nb3) {
+        let min=nb1;
+        if(min> nb2 ){
+            min=nb2;
+        }
+        if (min>nb3){
+            min=nb3;
+        }
+        alert(min);
+    }
+    checkMin(nb1,nb2,nb3);
+</script>
+</body>
+</html>

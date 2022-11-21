@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr=["a","b","d","e","f","g","h","j","k","a"];
+    function searchArr(array) {
+        let count = 0;
+        let char = prompt("nhập vào 1 ký tự bất kỳ: ");
+        for (let i = 0; i < array.length; i++) {
+            if (char == arr[i]) {
+                count++;
+            }
+        }
+        if(count!==0){
+            alert(count);
+        } else {
+            alert(-1);
+        }
+    }
+    searchArr(arr);
+</script>
+</body>
+</html>

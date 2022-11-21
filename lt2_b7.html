@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number1;
+    do {
+        number1 = +prompt("nhập vào số nguyên thứ nhất: ");
+    }while (number1%1!=0);
+    let number2;
+    do {
+        number2 = +prompt("nhập vào số nguyên thứ hai: ");
+    }while (number2%1!=0)
+
+    function change(nb1, nb2) {
+        var tmp = nb1;
+        nb1 = nb2;
+        nb2 = tmp;
+        alert(nb1);
+        alert(nb2)
+    }
+
+    change(number1, number2);
+</script>
+
+</body>
+</html>
